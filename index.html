@@ -1,29 +1,30 @@
-<!DOCTYPE html>
-<html>
-  <head>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
     <title>Autohaus</title>
-    <meta name="Autohaus" content="Autohaus">
+    <meta name="Autohaus" content="Autohaus" />
     <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
   </head>
-  <body>
-    <a-scene>
+  <body class="a-body ">
+    <a-scene class="fullscreen" inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui="" avatar-recorder="" avatar-replayer="autoPlay:false;cameraOverride:#null;loop:true"><canvas class="a-canvas" data-aframe-canvas="true" width="660" height="330"></canvas>
       <!-- <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9" shadow></a-box>
       <a-sphere position="0 1.25 -5" radius="1.25" color="#265147" shadow></a-sphere>
       <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D" shadow></a-cylinder> -->
-        <a-camera>
-    <a-cursor></a-cursor>
+        <a-camera position="6.530271450474854 0 -5.565763129337531" rotation="-31.512678732195294 -181.62762105647053 0" camera="" look-controls="" wasd-controls="" data-aframe-inspector-original-camera="" data-aframe-avatar-replayer-camera="">
+    <a-cursor material="" raycaster="" cursor="" geometry=""></a-cursor>
   </a-camera>
-      <a-assets>
-        <a-asset-item id="scene" src="https://cdn.glitch.com/eb9a0ac5-1157-409f-8b56-ab29cf860175%2Fscene.gltf?1525439324831"></a-asset-item>
-      </a-assets>
-     
-  <a-plane position="-9 0 -4" rotation="0 90 0" width="14" height="7" color="#959892" ></a-plane>
-      <a-plane position="9 0 -4" rotation="0 -90 0" width="14" height="7" color="#959892" ></a-plane>
-      <a-plane position="0 0 3" rotation="0 180 0" width="18" height="7" color="#959892" ></a-plane>
-      <a-plane position="0 0 -11" width="18" height="7" color="#959892" ></a-plane>
-      <a-plane position="0 -3.5 -4" rotation="-90 0 0" width="18" height="14" color="#959892" ></a-plane>
-      <a-plane position="0 3.5 -4" rotation="90 0 0" width="18" height="14" color="#959892" ></a-plane>
-      <a-sky color="#000020" ></a-sky>
-    </a-scene>
-  </body>
-</html>
+
+  <a-assets>
+    <a-asset-item id="crate-obj" src="model/bmw.obj"></a-asset-item>
+    <a-asset-item id="crate-mtl" src="model/bmw.mtl"></a-asset-item>
+</a-assets>
+<a-obj-model src="#crate-obj" mtl="#crate-mtl" position="6 -3 0" rotation="-90 0 90" scale="0.01 0.01 0.01" material="" obj-model=""></a-obj-model>
+  <a-plane position="-9 0 -4" rotation="0 90 0" width="14" height="7" color="#959892" material="" geometry=""></a-plane>
+  <a-plane position="9 0 -4" rotation="0 -90 0" width="14" height="7" color="#959892" material="" geometry=""></a-plane>
+  <a-plane position="0 0 3" rotation="0 180 0" width="18" height="7" color="#959892" material="" geometry=""></a-plane>
+  <a-plane position="0 0 -11" width="18" height="7" color="#959892" material="" geometry=""></a-plane>
+  <a-plane position="0 -3.5 -4" rotation="-90 0 0" width="18" height="14" color="#959892" material="" geometry=""></a-plane>
+  <a-plane position="0 3.5 -4" rotation="90 0 0" width="18" height="14" color="#959892" material="" geometry=""></a-plane>
+
+      <a-sky color="#000020" scale="0.1 0.1 0.1" material="" geometry=""></a-sky>
+    <a-entity id="spectatorCameraRig" position="0 1.6 2"><a-entity id="spectatorCamera" camera="active:false" look-controls="" wasd-controls="fly:true"></a-entity></a-entity></a-scene>
+  
+<script src="https://unpkg.com/aframe-motion-capture-components@0.2.6/dist/aframe-motion-capture-components.min.js"></script><textarea readonly="" style="font-size: 12pt; border: 0px; padding: 0px; margin: 0px; position: absolute; left: -9999px; top: 0px;"></textarea></body></html>
