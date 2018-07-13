@@ -1379,9 +1379,9 @@ Kd 1 1 1
 Ks 0.9 0.9 0.9
 illum 2
 Ns 14.9285
-map_Kd tread_tm.tga
-map_bump tread_tm_nm.tga
-bump tread_tm_nm.tga
+map_Kd tread_tm.png
+map_bump tread_tm_nm.png
+bump tread_tm_nm.png
 map_opacity 
 map_d 
 refl 
@@ -1395,7 +1395,7 @@ Kd 1 1 1
 Ks 0.9 0.9 0.9
 illum 2
 Ns 13.9288
-map_Kd generic_tire.tga
+map_Kd generic_tire.png
 map_bump 
 bump 
 map_opacity 
