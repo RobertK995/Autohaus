@@ -10,20 +10,38 @@
 <body class="a-body ">
   <a-scene class="fullscreen" avatar-replayer="autoPlay:false;cameraOverride:#null;loop:true">
     <canvas class="a-canvas" data-aframe-canvas="true" width="660" height="330"></canvas>
-    <a-camera position="0 6 0" rotation="0 180 0"></a-camera>
+    <a-camera position="0 6 10"><a-cursor></a-cursor></a-camera>
+    
     
     <a-assets>
       <a-asset-item id="bmw" src="model/bmw/bmw.obj"></a-asset-item>
       <a-asset-item id="bmwgrau" src="model/bmw/bmw.mtl"></a-asset-item>
-      <a-asset-item id="shelby" src="model/cobra/shelby.obj"></a-asset-item>
-      <a-asset-item id="shelbyred" src="model/cobra/shelby.mtl"></a-asset-item>
     </a-assets>
 	  
-	  <a-text value="Auto 1" position="7 0 -18" rotation="-90 0 90"></a-text>
-    <a-obj-model src="#bmw" mtl="#bmwgrau" position="0 0 -20" rotation="-90 0 90" scale=" 0.1 0.1 0.1"></a-obj-model>
-  
-	  <a-text value="Auto 2" position="7 0 -18" rotation="-90 0 90"></a-text>
-    <a-obj-model src="#shelby" mtl="#shelbyred" position="0 0 -35" rotation="0 0 0" scale=" 3.0 3.0 3.0"></a-obj-model>	
+    <a-text value="Willkommen im Autohaus HK" position="0 10 -20" rotation="0 0 0" scale="30 30 30" align="center" font="monoid"></a-text>
+
+
+    
+    <a-obj-model src="#bmw" mtl="#bmwgrau" position="-70 0 -60" rotation="-90 0 45" scale=" 0.1 0.1 0.1"></a-obj-model>
+    <a-obj-model src="#bmw" mtl="#bmwgrau" position="-50 0 -60" rotation="-90 0 45" scale=" 0.1 0.1 0.1"></a-obj-model>
+    <a-obj-model src="#bmw" mtl="#bmwgrau" position="-30 0 -60" rotation="-90 0 45" scale=" 0.1 0.1 0.1"></a-obj-model>
+    <a-obj-model src="#bmw" mtl="#bmwgrau" position="-10 0 -60" rotation="-90 0 0" scale=" 0.1 0.1 0.1"></a-obj-model>
+    <a-obj-model src="#bmw" mtl="#bmwgrau" position="10 0 -60" rotation="-90 0 0" scale=" 0.1 0.1 0.1"></a-obj-model>
+    <a-obj-model src="#bmw" mtl="#bmwgrau" position="30 0 -60" rotation="-90 0 -45" scale=" 0.1 0.1 0.1"></a-obj-model>
+    <a-obj-model src="#bmw" mtl="#bmwgrau" position="50 0 -60" rotation="-90 0 -45" scale=" 0.1 0.1 0.1"></a-obj-model>
+    <a-obj-model src="#bmw" mtl="#bmwgrau" position="70 0 -60" rotation="-90 0 -45" scale=" 0.1 0.1 0.1"></a-obj-model>
+
+    <a-obj-model src="#bmw" mtl="#bmwgrau" position="-70 0 -30" rotation="-90 0 45" scale=" 0.1 0.1 0.1"></a-obj-model>
+    <a-obj-model src="#bmw" mtl="#bmwgrau" position="-50 0 -30" rotation="-90 0 45" scale=" 0.1 0.1 0.1"></a-obj-model>
+    <a-obj-model src="#bmw" mtl="#bmwgrau" position="-30 0 -30" rotation="-90 0 45" scale=" 0.1 0.1 0.1"></a-obj-model>
+    <a-obj-model src="#bmw" mtl="#bmwgrau" position="-10 0 -30" rotation="-90 0 0" scale=" 0.1 0.1 0.1">
+      <a-animation attribute="position" begin="mouseenter" dur="2000" to="-10 0 -25"></a-animation>
+      <a-animation attribute="position" begin="mouseleave" dur="500" to="-10 0 -30"></a-animation>
+    </a-obj-model>
+    <a-obj-model src="#bmw" mtl="#bmwgrau" position="10 0 -30" rotation="-90 0 0" scale=" 0.1 0.1 0.1"></a-obj-model>
+    <a-obj-model src="#bmw" mtl="#bmwgrau" position="30 0 -30" rotation="-90 0 -45" scale=" 0.1 0.1 0.1"></a-obj-model>
+    <a-obj-model src="#bmw" mtl="#bmwgrau" position="50 0 -30" rotation="-90 0 -45" scale=" 0.1 0.1 0.1"></a-obj-model>
+    <a-obj-model src="#bmw" mtl="#bmwgrau" position="70 0 -30" rotation="-90 0 -45" scale=" 0.1 0.1 0.1"></a-obj-model>
   
     <a-plane position="-90 10 0" rotation="0 90 0" width="140" height="20" color="#959892"></a-plane>
     <a-plane position="90 10 0" rotation="0 -90 0" width="140" height="20" color="#959892"></a-plane>
@@ -32,16 +50,11 @@
     <a-plane position="0 0 0" rotation="-90 0 0" width="180" height="140" color="#959892"></a-plane>
     <a-plane position="0 20 0" rotation="90 0 0" width="180" height="140" color="#959892"></a-plane>
 
-    <a-sky color="#000020" ></a-sky>
-    <a-entity id="spectatorCameraRig" position="0 2 2">
-    <a-entity id="spectatorCamera" camera="active:false" look-controls="" wasd-controls="fly:true"></a-entity>
-    </a-entity>
+    <a-sky src="sky.jpg" rotation="28 0 0"></a-sky>
+    
   </a-scene>
 
-  
 
-  <script src="https://unpkg.com/aframe-motion-capture-components@0.2.6/dist/aframe-motion-capture-components.min.js"></script>
-  <textarea readonly="" style="font-size: 12pt; border: 0px; padding: 0px; margin: 0px; position: absolute; left: -9999px; top: 0px;"></textarea>
 </body>
 
 </html>
