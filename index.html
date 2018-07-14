@@ -16,9 +16,15 @@
     <a-assets>
       <a-asset-item id="bmw" src="model/bmw/bmw.obj"></a-asset-item>
       <a-asset-item id="bmwgrau" src="model/bmw/bmw.mtl"></a-asset-item>
+		
+		
+	  <img id="glass" src="texture/glass.jpg" alt="glass"/>
+	  <img id="ground" src="texture/ground.jpg" alt="ground"/>
+	  <img id="fliesen" src="texture/fliesen.jpg" alt="fliesen"/>
+	  <img id="wall" src="texture/wall.jpg" alt="wall"/>
     </a-assets>
 	  
-    <a-text value="Willkommen im Autohaus HK" position="0 10 -20" rotation="0 0 0" scale="30 30 30" align="center" font="monoid"></a-text>
+    <a-text value="Willkommen im Autohaus HK" position="0 10 -20" rotation="0 0 0" scale="20 20 20" align="center" font="monoid" color="black"></a-text>
 
 
     
@@ -43,12 +49,14 @@
     <a-obj-model src="#bmw" mtl="#bmwgrau" position="50 0 -30" rotation="-90 0 -45" scale=" 0.1 0.1 0.1"></a-obj-model>
     <a-obj-model src="#bmw" mtl="#bmwgrau" position="70 0 -30" rotation="-90 0 -45" scale=" 0.1 0.1 0.1"></a-obj-model>
   
-    <a-plane position="-90 10 0" rotation="0 90 0" width="140" height="20" color="#959892"></a-plane>
-    <a-plane position="90 10 0" rotation="0 -90 0" width="140" height="20" color="#959892"></a-plane>
-    <a-plane position="0 10 70" rotation="0 180 0" width="180" height="20" color="#959892"></a-plane>
-    <a-plane position="0 10 -70" width="180" height="20" color="#959892"></a-plane>
-    <a-plane position="0 0 0" rotation="-90 0 0" width="180" height="140" color="#959892"></a-plane>
-    <a-plane position="0 20 0" rotation="90 0 0" width="180" height="140" color="#959892"></a-plane>
+	  
+
+    <a-plane position="-90 10 0" rotation="0 90 0" width="140" height="20" src="#wall" transparent="true"></a-plane>
+    <a-plane position="90 10 0" rotation="0 -90 0" width="140" height="20" src="#wall" transparent="true"></a-plane>
+    <a-plane position="0 10 70" rotation="0 180 0" width="180" height="20" src="#wall" transparent="true"></a-plane>
+    <a-plane position="0 10 -70" width="180" height="20" src="#wall" transparent="true"></a-plane>
+    <a-plane position="0 0 0" rotation="-90 0 0" width="180" height="140" src="#fliesen"></a-plane>
+    <a-plane position="0 20 0" rotation="90 0 0" width="180" height="140" src="#glass" transparent="true"></a-plane>
 
     <a-sky src="sky.jpg" rotation="28 0 0"></a-sky>
     
