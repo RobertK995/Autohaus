@@ -26,15 +26,14 @@
       <a-asset-item id="m3m" src="model/m3/m3.mtl"></a-asset-item>
       <a-asset-item id="bmw" src="model/bmw/bmw.obj"></a-asset-item>
       <a-asset-item id="bmwm" src="model/bmw/bmw.mtl"></a-asset-item>
-    
- 
-
-
-      
+      <a-asset-item id="challenger" src="model/challenger/challenger.obj"></a-asset-item>
+      <a-asset-item id="challengerm" src="model/challenger/challenger.mtl"></a-asset-item>   
+	  <a-asset-item id="scion" src="model/scion/scion.obj"></a-asset-item>
+      <a-asset-item id="scionm" src="model/scion/scion.mtl"></a-asset-item>
 		
 
-	  <img id="fliesen" src="texture/fliesen.jpg" alt="fliesen"/>
-	  <img id="wall" src="texture/wall.jpg" alt="wall"/>
+	  <img id="fliesen" src="../Documents/Autohaus/texture/fliesen.jpg" alt="fliesen"/>
+	  <img id="wall" src="../Documents/Autohaus/texture/wall.jpg" alt="wall"/>
     </a-assets>
     
     <a-sky color="#01072b"></a-sky>
@@ -42,126 +41,144 @@
     <a-light type="ambient" intensity="0.5"></a-light>
     <a-light type="spot" color="#f5ffaa" position="40 60 80" intensity="0.95"></a-light>
 
-    <a-text value="Willkommen im Autohaus HK" position="0 10 -20" rotation="0 0 0" scale="20 20 20" align="center" font="monoid" color="black"></a-text>
+    <a-text value="Willkommen im Autohaus HK" position="0 10 -20" rotation="0 0 0" scale="20 20 20" align="center" font="monoid" color="orange"></a-text>
 
 
     <a-obj-model src="#Alfa_Romeo" mtl="#Alfa_Romeom" position="-70 4.1 -60" rotation="-90 0 45" scale=" 1.5 1.5 1.5"></a-obj-model>
-    <a-entity position="-60 0 -50" rotation="0 45 0">
+	<a-entity position="-60 0 -50" rotation="0 45 0">
       <a-box position="0 0 0" rotation="-45 0 0" width="4" height="4" scale="1 1 0.25" color="darkred"></a-box>
-      <a-text value="Automedell Name" position="0 1 -0.82" rotation="-45 0 0" scale="2 2 2" align="center"></a-text>
-      <a-text value="Auto Beschreibung" position="0 -0.25 0.43" rotation="-45 0 0" scale="2 2 2" align="center"></a-text>
+      <a-text value="Alfa Romeo Brera" position="0 1 -0.82" rotation="-45 0 0" scale="2 2 2" align="center"></a-text>
+      <a-text value="191KW/260PS" position="0 -0.25 0.43" rotation="-45 0 0" scale="2 2 2" align="center"></a-text>
       <a-animation attribute="position" begin="click"  dur="1000" to="-60 2 -50"></a-animation>
     </a-entity>
+
+	  
     <a-obj-model src="#rx" mtl="#rxm" position="-50 2.3 -60" rotation="0 45 0" scale=" 1.3 1.5 1.5"></a-obj-model>
-    <a-entity position="0 0 0" rotation="0 45 0">
+    <a-entity position="-40 0 -60" rotation="0 45 0">
       <a-box position="0 0 0" rotation="-45 0 0" width="4" height="4" scale="1 1 0.25" color="darkred"></a-box>
-      <a-text value="Automedell Name" position="0 1 -0.82" rotation="-45 0 0" scale="2 2 2" align="center"></a-text>
+      <a-text value="Automodell Name" position="0 1 -0.82" rotation="-45 0 0" scale="2 2 2" align="center"></a-text>
       <a-text value="Auto Beschreibung" position="0 -0.25 0.43" rotation="-45 0 0" scale="2 2 2" align="center"></a-text>
-      <a-animation attribute="position" begin="click"  dur="1000" to="0 2 0"></a-animation>
-    </a-entity>
-    <a-obj-model src="#m3" mtl="#m3m" position="-30 0 -60" rotation="0 -45 0" scale=" 0.0015 0.0015 0.002"></a-obj-model>
-    <a-entity position="0 0 0" rotation="0 45 0">
-      <a-box position="0 0 0" rotation="-45 0 0" width="4" height="4" scale="1 1 0.25" color="darkred"></a-box>
-      <a-text value="Automedell Name" position="0 1 -0.82" rotation="-45 0 0" scale="2 2 2" align="center"></a-text>
-      <a-text value="Auto Beschreibung" position="0 -0.25 0.43" rotation="-45 0 0" scale="2 2 2" align="center"></a-text>
-      <a-animation attribute="position" begin="click"  dur="1000" to="0 2 0"></a-animation>
-    </a-entity>
-    <a-obj-model src="#lambo" mtl="#lambom" position="-10 0 -60" rotation="0 0 0" scale=" 0.05 0.05 0.05"></a-obj-model>
-    <a-entity position="0 0 0">
-      <a-box position="0 0 0" rotation="-45 0 0" width="4" height="4" scale="1 1 0.25" color="darkred"></a-box>
-      <a-text value="Automedell Name" position="0 1 -0.82" rotation="-45 0 0" scale="2 2 2" align="center"></a-text>
-      <a-text value="Auto Beschreibung" position="0 -0.25 0.43" rotation="-45 0 0" scale="2 2 2" align="center"></a-text>
-      <a-animation attribute="position" begin="click"  dur="1000" to="0 2 0"></a-animation>
-    </a-entity>
-    <a-obj-model src="#bmw" mtl="#bmwm" position="10 0 -60" rotation="-90 0 0" scale=" 0.1 0.1 0.1"></a-obj-model>
-    <a-entity position="0 0 0">
-      <a-box position="0 0 0" rotation="-45 0 0" width="4" height="4" scale="1 1 0.25" color="darkred"></a-box>
-      <a-text value="Automedell Name" position="0 1 -0.82" rotation="-45 0 0" scale="2 2 2" align="center"></a-text>
-      <a-text value="Auto Beschreibung" position="0 -0.25 0.43" rotation="-45 0 0" scale="2 2 2" align="center"></a-text>
-      <a-animation attribute="position" begin="click"  dur="1000" to="0 2 0"></a-animation>
-    </a-entity>
-    <a-obj-model src="#bmw" mtl="#bmwm" position="30 0 -60" rotation="-90 0 -45" scale=" 0.1 0.1 0.1"></a-obj-model>
-    <a-entity position="0 0 0" rotation="0 -45 0">
-      <a-box position="0 0 0" rotation="-45 0 0" width="4" height="4" scale="1 1 0.25" color="darkred"></a-box>
-      <a-text value="Automedell Name" position="0 1 -0.82" rotation="-45 0 0" scale="2 2 2" align="center"></a-text>
-      <a-text value="Auto Beschreibung" position="0 -0.25 0.43" rotation="-45 0 0" scale="2 2 2" align="center"></a-text>
-      <a-animation attribute="position" begin="click"  dur="1000" to="0 2 0"></a-animation>
-    </a-entity>
-    <a-obj-model src="#bmw" mtl="#bmwm" position="50 0 -60" rotation="-90 0 -45" scale=" 0.1 0.1 0.1"></a-obj-model>
-    <a-entity position="0 0 0" rotation="0 -45 0">
-      <a-box position="0 0 0" rotation="-45 0 0" width="4" height="4" scale="1 1 0.25" color="darkred"></a-box>
-      <a-text value="Automedell Name" position="0 1 -0.82" rotation="-45 0 0" scale="2 2 2" align="center"></a-text>
-      <a-text value="Auto Beschreibung" position="0 -0.25 0.43" rotation="-45 0 0" scale="2 2 2" align="center"></a-text>
-      <a-animation attribute="position" begin="click"  dur="1000" to="0 2 0"></a-animation>
-    </a-entity>
-    <a-obj-model src="#bmw" mtl="#bmwm" position="70 0 -60" rotation="-90 0 -45" scale=" 0.1 0.1 0.1"></a-obj-model>
-    <a-entity position="0 0 0" rotation="0 -45 0">
-      <a-box position="0 0 0" rotation="-45 0 0" width="4" height="4" scale="1 1 0.25" color="darkred"></a-box>
-      <a-text value="Automedell Name" position="0 1 -0.82" rotation="-45 0 0" scale="2 2 2" align="center"></a-text>
-      <a-text value="Auto Beschreibung" position="0 -0.25 0.43" rotation="-45 0 0" scale="2 2 2" align="center"></a-text>
-      <a-animation attribute="position" begin="click"  dur="1000" to="0 2 0"></a-animation>
+      <a-animation attribute="position" begin="click"  dur="1000" to="-40 2 -60"></a-animation>
     </a-entity>
 
-    <a-obj-model src="#x6" mtl="#x6m" position="-70 3.5 -30" rotation="-90 45 0" scale=" 4.2 4.2 4.2"></a-obj-model>
-    <a-entity position="0 0 0" rotation="0 45 0">
+	  
+    <a-obj-model src="#m3" mtl="#m3m" position="-30 0 -60" rotation="0 -45 0" scale=" 0.0015 0.0015 0.0015"></a-obj-model>
+	<a-entity position="-20 0 -50" rotation="0 45 0">
       <a-box position="0 0 0" rotation="-45 0 0" width="4" height="4" scale="1 1 0.25" color="darkred"></a-box>
-      <a-text value="Automedell Name" position="0 1 -0.82" rotation="-45 0 0" scale="2 2 2" align="center"></a-text>
-      <a-text value="Auto Beschreibung" position="0 -0.25 0.43" rotation="-45 0 0" scale="2 2 2" align="center"></a-text>
-      <a-animation attribute="position" begin="click"  dur="1000" to="0 2 0"></a-animation>
+      <a-text value="Automodell Name" position="-30 0 -60" rotation="-45 0 0" scale="2 2 2" align="center"></a-text>
+      <a-text value="Auto Beschreibung" position="-30 0 -60" rotation="-45 0 0" scale="2 2 2" align="center"></a-text>
+      <a-animation attribute="position" begin="click"  dur="1000" to="-20 2 -50"></a-animation>
     </a-entity>
+
+	  
+    <a-obj-model src="#scion" mtl="#scionm" position="-10 0 -60" rotation="0 0 0" scale=" 1.25 1.25 1.25"></a-obj-model>
+	<a-entity position="0 0 -50" rotation="0 45 0">
+      <a-box position="0 0 0" rotation="-45 0 0" width="4" height="4" scale="1 1 0.25" color="darkred"></a-box>
+      <a-text value="Toyota GT86" position="-50 1 -0.82" rotation="-45 0 0" scale="2 2 2" align="center"></a-text>
+      <a-text value="135KW/200PS" position="0 -0.25 0.43" rotation="-45 0 0" scale="2 2 2" align="center"></a-text>
+      <a-animation attribute="position" begin="click"  dur="1000" to="0 2 -50"></a-animation>
+    </a-entity>
+	  
+    <a-obj-model src="#bmw" mtl="#bmwm" position="10 0 -60" rotation="-90 0 0" scale=" 0.1 0.1 0.1"></a-obj-model>
+	<a-entity position="20 0 -50" rotation="0 45 0">
+      <a-box position="0 0 0" rotation="-45 0 0" width="4" height="4" scale="1 1 0.25" color="darkred"></a-box>
+      <a-text value="Bmw 2002" position="-50 1 -0.82" rotation="-45 0 0" scale="2 2 2" align="center"></a-text>
+      <a-text value="118KW/160PS" position="0 -0.25 0.43" rotation="-45 0 0" scale="2 2 2" align="center"></a-text>
+      <a-animation attribute="position" begin="click"  dur="1000" to="20 2 -50"></a-animation>
+    </a-entity>
+	  
+    <a-obj-model src="#bmw" mtl="#bmwm" position="30 0 -60" rotation="-90 0 -45" scale=" 0.1 0.1 0.1"></a-obj-model>
+	<a-entity position="40 0 -50" rotation="0 45 0">
+      <a-box position="0 0 0" rotation="-45 0 0" width="4" height="4" scale="1 1 0.25" color="darkred"></a-box>
+      <a-text value="Bmw 2002" position="-50 1 -0.82" rotation="-45 0 0" scale="2 2 2" align="center"></a-text>
+      <a-text value="118KW/160PS" position="0 -0.25 0.43" rotation="-45 0 0" scale="2 2 2" align="center"></a-text>
+      <a-animation attribute="position" begin="click"  dur="1000" to="40 2 -50"></a-animation>
+    </a-entity>
+	  
+    <a-obj-model src="#bmw" mtl="#bmwm" position="50 0 -60" rotation="-90 0 -45" scale=" 0.1 0.1 0.1"></a-obj-model>
+	<a-entity position="60 0 -50" rotation="0 45 0">
+      <a-box position="0 0 0" rotation="-45 0 0" width="4" height="4" scale="1 1 0.25" color="darkred"></a-box>
+      <a-text value="Bmw 2002" position="-50 1 -0.82" rotation="-45 0 0" scale="2 2 2" align="center"></a-text>
+      <a-text value="118KW/160PS" position="0 -0.25 0.43" rotation="-45 0 0" scale="2 2 2" align="center"></a-text>
+      <a-animation attribute="position" begin="click"  dur="1000" to="60 2 -50"></a-animation>
+    </a-entity>
+	  
+    <a-obj-model src="#bmw" mtl="#bmwm" position="70 0 -60" rotation="-90 0 -45" scale=" 0.1 0.1 0.1"></a-obj-model>
+	<a-entity position="80 0 -50" rotation="0 45 0">
+      <a-box position="0 0 0" rotation="-45 0 0" width="4" height="4" scale="1 1 0.25" color="darkred"></a-box>
+      <a-text value="Bmw 2002" position="-50 1 -0.82" rotation="-45 0 0" scale="2 2 2" align="center"></a-text>
+      <a-text value="118KW/160PS" position="0 -0.25 0.43" rotation="-45 0 0" scale="2 2 2" align="center"></a-text>
+      <a-animation attribute="position" begin="click"  dur="1000" to="80 2 -50"></a-animation>
+    </a-entity>
+	  
+    7<a-obj-model src="#x6" mtl="#x6m" position="-70 3.7 -30" rotation="-90 45 0" scale=" 4.2 4.2 4.2"></a-obj-model>
+	<a-entity position="-60 0 -20" rotation="0 45 0">
+      <a-box position="0 0 0" rotation="-45 0 0" width="4" height="4" scale="1 1 0.25" color="darkred"></a-box>
+      <a-text value="Hypercar" position="-50 1 -0.82" rotation="-45 0 0" scale="2 2 2" align="center"></a-text>
+      <a-text value="385KW/520PS" position="0 -0.25 0.43" rotation="-45 0 0" scale="2 2 2" align="center"></a-text>
+      <a-animation attribute="position" begin="click"  dur="1000" to="-60 2 -20"></a-animation>
+    </a-entity>
+	  
     <a-obj-model src="#bmw" mtl="#bmwm" position="-50 0 -30" rotation="-90 0 45" scale=" 0.1 0.1 0.1"></a-obj-model>
-    <a-entity position="0 0 0" rotation="0 45 0">
+	<a-entity position="-40 0 -20" rotation="0 45 0">
       <a-box position="0 0 0" rotation="-45 0 0" width="4" height="4" scale="1 1 0.25" color="darkred"></a-box>
-      <a-text value="Automedell Name" position="0 1 -0.82" rotation="-45 0 0" scale="2 2 2" align="center"></a-text>
-      <a-text value="Auto Beschreibung" position="0 -0.25 0.43" rotation="-45 0 0" scale="2 2 2" align="center"></a-text>
-      <a-animation attribute="position" begin="click"  dur="1000" to="0 2 0"></a-animation>
+      <a-text value="Bmw 2002" position="-50 1 -0.82" rotation="-45 0 0" scale="2 2 2" align="center"></a-text>
+      <a-text value="118KW/160PS" position="0 -0.25 0.43" rotation="-45 0 0" scale="2 2 2" align="center"></a-text>
+      <a-animation attribute="position" begin="click"  dur="1000" to="-40 2 -20"></a-animation>
     </a-entity>
+	  
     <a-obj-model src="#bmw" mtl="#bmwm" position="-30 0 -30" rotation="-90 0 45" scale=" 0.1 0.1 0.1"></a-obj-model>
-    <a-entity position="0 0 0" rotation="0 45 0">
+	<a-entity position="-20 0 -20" rotation="0 45 0">
       <a-box position="0 0 0" rotation="-45 0 0" width="4" height="4" scale="1 1 0.25" color="darkred"></a-box>
-      <a-text value="Automedell Name" position="0 1 -0.82" rotation="-45 0 0" scale="2 2 2" align="center"></a-text>
-      <a-text value="Auto Beschreibung" position="0 -0.25 0.43" rotation="-45 0 0" scale="2 2 2" align="center"></a-text>
-      <a-animation attribute="position" begin="click"  dur="1000" to="0 2 0"></a-animation>
-    </a-entity>
+      <a-text value="Bmw 2002" position="-50 1 -0.82" rotation="-45 0 0" scale="2 2 2" align="center"></a-text>
+      <a-text value="118KW/160PS" position="0 -0.25 0.43" rotation="-45 0 0" scale="2 2 2" align="center"></a-text>
+      <a-animation attribute="position" begin="click"  dur="1000" to="-20 2 -20"></a-animation>
+    </a-entity>  
+	  
     <a-obj-model src="#bmw" mtl="#bmwm" position="-10 0 -30" rotation="-90 0 0" scale=" 0.1 0.1 0.1">
       <a-animation attribute="position" begin="mouseenter" dur="2000" to="-10 0 -25"></a-animation>
       <a-animation attribute="position" begin="mouseleave" dur="500" to="-10 0 -30"></a-animation>
     </a-obj-model>
-    <a-entity position="0 0 0">
+	<a-entity position="0 0 -20" rotation="0 45 0">
       <a-box position="0 0 0" rotation="-45 0 0" width="4" height="4" scale="1 1 0.25" color="darkred"></a-box>
-      <a-text value="Automedell Name" position="0 1 -0.82" rotation="-45 0 0" scale="2 2 2" align="center"></a-text>
-      <a-text value="Auto Beschreibung" position="0 -0.25 0.43" rotation="-45 0 0" scale="2 2 2" align="center"></a-text>
-      <a-animation attribute="position" begin="click"  dur="1000" to="0 2 0"></a-animation>
+      <a-text value="Bmw 2002" position="-50 1 -0.82" rotation="-45 0 0" scale="2 2 2" align="center"></a-text>
+      <a-text value="118KW/160PS" position="0 -0.25 0.43" rotation="-45 0 0" scale="2 2 2" align="center"></a-text>
+      <a-animation attribute="position" begin="click"  dur="1000" to="0 2 -20"></a-animation>
     </a-entity>
-    <a-obj-model src="#bmw" mtl="#bmwm" position="10 0 -30" rotation="-90 0 0" scale=" 0.1 0.1 0.1"></a-obj-model>
-    <a-entity position="0 0 0">
+	  
+    <a-obj-model src="#challenger" mtl="#challengerm" position="10 0 -30" rotation="-90 0 0" scale=" 4.0 4.0 4.0"></a-obj-model>
+	<a-entity position="20 0 -20" rotation="0 45 0">
       <a-box position="0 0 0" rotation="-45 0 0" width="4" height="4" scale="1 1 0.25" color="darkred"></a-box>
-      <a-text value="Automedell Name" position="0 1 -0.82" rotation="-45 0 0" scale="2 2 2" align="center"></a-text>
-      <a-text value="Auto Beschreibung" position="0 -0.25 0.43" rotation="-45 0 0" scale="2 2 2" align="center"></a-text>
-      <a-animation attribute="position" begin="click"  dur="1000" to="0 2 0"></a-animation>
+      <a-text value="Hypercar" position="-50 1 -0.82" rotation="-45 0 0" scale="2 2 2" align="center"></a-text>
+      <a-text value="385KW/520PS" position="0 -0.25 0.43" rotation="-45 0 0" scale="2 2 2" align="center"></a-text>
+      <a-animation attribute="position" begin="click"  dur="1000" to="20 2 -20"></a-animation>
     </a-entity>
-    <a-obj-model src="#bmw" mtl="#bmwm" position="30 0 -30" rotation="-90 0 -45" scale=" 0.1 0.1 0.1"></a-obj-model>
-    <a-entity position="0 0 0" rotation="0 -45 0">
+	  
+    <a-obj-model src="#challenger" mtl="#challengerm" position="30 0 -30" rotation="-90 0 -45" scale=" 4.0 4.0 4.0"></a-obj-model>
+	<a-entity position="40 0 -20" rotation="0 45 0">
       <a-box position="0 0 0" rotation="-45 0 0" width="4" height="4" scale="1 1 0.25" color="darkred"></a-box>
-      <a-text value="Automedell Name" position="0 1 -0.82" rotation="-45 0 0" scale="2 2 2" align="center"></a-text>
-      <a-text value="Auto Beschreibung" position="0 -0.25 0.43" rotation="-45 0 0" scale="2 2 2" align="center"></a-text>
-      <a-animation attribute="position" begin="click"  dur="1000" to="0 2 0"></a-animation>
+      <a-text value="Hypercar" position="-50 1 -0.82" rotation="-45 0 0" scale="2 2 2" align="center"></a-text>
+      <a-text value="385KW/520PS" position="0 -0.25 0.43" rotation="-45 0 0" scale="2 2 2" align="center"></a-text>
+      <a-animation attribute="position" begin="click"  dur="1000" to="40 2 -20"></a-animation>
     </a-entity>
-    <a-obj-model src="#bmw" mtl="#bmwm" position="50 0 -30" rotation="-90 0 -45" scale=" 0.1 0.1 0.1"></a-obj-model>
-    <a-entity position="0 0 0" rotation="0 -45 0">
+	  
+    <a-obj-model src="#challenger" mtl="#challengerm" position="50 0 -30" rotation="-90 0 -45" scale=" 4.0 4.0 4.0"></a-obj-model>
+	<a-entity position="60 0 -20" rotation="0 45 0">
       <a-box position="0 0 0" rotation="-45 0 0" width="4" height="4" scale="1 1 0.25" color="darkred"></a-box>
-      <a-text value="Automedell Name" position="0 1 -0.82" rotation="-45 0 0" scale="2 2 2" align="center"></a-text>
-      <a-text value="Auto Beschreibung" position="0 -0.25 0.43" rotation="-45 0 0" scale="2 2 2" align="center"></a-text>
-      <a-animation attribute="position" begin="click"  dur="1000" to="0 2 0"></a-animation>
+      <a-text value="Hypercar" position="-50 1 -0.82" rotation="-45 0 0" scale="2 2 2" align="center"></a-text>
+      <a-text value="385KW/520PS" position="0 -0.25 0.43" rotation="-45 0 0" scale="2 2 2" align="center"></a-text>
+      <a-animation attribute="position" begin="click"  dur="1000" to="60 2 -20"></a-animation>
     </a-entity>
+	  
     <a-obj-model src="#bmw" mtl="#bmwm" position="70 0 -30" rotation="-90 0 -45" scale=" 0.1 0.1 0.1"></a-obj-model>
-    <a-entity position="0 0 0" rotation="0 -45 0">
+    <a-entity position="80 0 -20" rotation="0 45 0">
       <a-box position="0 0 0" rotation="-45 0 0" width="4" height="4" scale="1 1 0.25" color="darkred"></a-box>
-      <a-text value="Automedell Name" position="0 1 -0.82" rotation="-45 0 0" scale="2 2 2" align="center"></a-text>
-      <a-text value="Auto Beschreibung" position="0 -0.25 0.43" rotation="-45 0 0" scale="2 2 2" align="center"></a-text>
-      <a-animation attribute="position" begin="click"  dur="1000" to="0 2 0"></a-animation>
+      <a-text value="Bmw 2002" position="-50 1 -0.82" rotation="-45 0 0" scale="2 2 2" align="center"></a-text>
+      <a-text value="118KW/160PS" position="0 -0.25 0.43" rotation="-45 0 0" scale="2 2 2" align="center"></a-text>
+      <a-animation attribute="position" begin="click"  dur="1000" to="80 2 -20"></a-animation>
     </a-entity>
-
+	 	  
+	  
 
     <a-plane position="-90 10 0" rotation="0 90 0" width="140" height="20" src="#wall"></a-plane>
     <a-plane position="90 10 0" rotation="0 -90 0" width="140" height="20" src="#wall"></a-plane>
